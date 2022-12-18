@@ -1,0 +1,148 @@
+:root {
+  --bgColor: #BAB86C;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  background-image: url(../images/02-portfolio-3.jpg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+#row {
+  flex-direction: row;
+}
+
+header {
+  padding:10px;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.logo {
+  padding: 5px;
+  margin: 6px;
+}
+
+nav{
+  padding: 10px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li a{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color:black;
+  width: auto;
+  transition-duration: 0.5;
+}
+
+li :hover {
+  color: white;
+  font-size: 20px;
+}
+
+section {
+  margin-left: 10vw;
+  margin-left: 10vw;
+  padding: 20px;
+}
+
+#hero-banner {
+  padding:40px;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1 1 1;
+  grid-template-rows: 50% 50%;
+  grid-template: 
+  "headline DP"
+  "headline DP"
+  "contactButton DP";
+}
+
+#hero-banner h1 {
+  font-size: 45px;
+}
+
+#hero-banner h2 {
+  font-size: 50px;
+}
+
+#hero-banner p {
+  font-size: 26px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#headline{
+  grid-area: headline;
+}
+
+#DP{
+  grid-area: DP;
+  background-image: url("");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#contactButton{
+  margin-top: 10px;
+  grid-area: contactButton;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  transition-duration: 0.4s;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
