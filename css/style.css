@@ -11,7 +11,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-image: url(../images/02-portfolio-3.jpg);
+  background-image: url("../images/02-portfolio-3.jpg");
 }
 
 h1,
@@ -74,12 +74,6 @@ li :hover {
   font-size: 20px;
 }
 
-section {
-  margin-left: 10vw;
-  margin-left: 10vw;
-  padding: 20px;
-}
-
 #hero-banner {
   padding:40px;
   height: 80vh;
@@ -116,7 +110,7 @@ section {
 
 #DP{
   grid-area: DP;
-  background-image: url("");
+  background-image: url("../images/headshot.jpg");
   background-size: cover;
   justify-content: center;
   align-items: center;
@@ -145,4 +139,57 @@ button {
 button:hover {
   background-color: black;
   color: white;
+}
+
+.page-wrapper {
+  margin-top: 20px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding: 20px;
+}
+
+section {
+  text-align: right;
+  margin-right:10px;
+  margin-bottom: 30px;
+}
+
+#projectGrid {
+  display: grid;
+  grid-template-columns: 1 1;
+  grid-template-rows: 50% 50%;
+  grid-area: 
+  "z m"
+  "t w";
+}
+
+#project1 {
+  grid-area: z;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#project2 {
+  grid-area: m;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#project3 {
+  grid-area: t;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#project4 {
+  grid-area: w;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+.project-content {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: block;
+  max-width: 300px;
+  max-height: 150px;
 }
